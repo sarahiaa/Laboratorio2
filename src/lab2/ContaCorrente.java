@@ -1,9 +1,11 @@
 package lab2;
 
 public class ContaCorrente extends Conta implements Itributavel{
-		public ContaCorrente(int numero, String Cliente) {
+		
+	public ContaCorrente(int numero, String cliente) {
 			super(numero, cliente);
 		}
+		
 		@Override
 		public void sacar (double valor) {
 			double taxa = valor * 0.05;
@@ -19,4 +21,25 @@ public class ContaCorrente extends Conta implements Itributavel{
 
 		}
 		
+		@Override
+		public void transferir(Conta destino, double valor) {
+			double taxa = valor * 0.05;
+			double totalTransferir = valor + taxa;
+			
+			if (valor > 0 && saldo >= totalTransferir) {
+				saldo -= totalTransferir;
+				destino.depositar(valor);
+				System.out.println("Transferência de R$ " + valor + "realizada ✅");
+
+				
+			} else {
+				System.out.println("Seu saldo é insuficiente para essa transferência ❌");
+
+			}
+		}
+		
+		@Override
+		public double calcularTributos() {
+			return saldo * 0.01;
+		}
 }
