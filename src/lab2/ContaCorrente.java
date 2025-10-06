@@ -13,9 +13,9 @@ public class ContaCorrente extends Conta implements Itributavel{
 			
 			if (valor >0 && saldo >= totalSaque) {
 				saldo -= totalSaque;
-				System.out.println("Saque de R$ " + valor + "realizado ✅");
+				System.out.println("Saque de R$ " + valor + " realizado ✅");
 			} else {
-				System.out.println("Seu saldo é insuficiente par saque ❌");
+				System.out.println("Seu saldo é insuficiente para saque ❌");
 
 			}
 		}
@@ -28,7 +28,7 @@ public class ContaCorrente extends Conta implements Itributavel{
 			if (valor > 0 && saldo >= totalTransferir) {
 				saldo -= totalTransferir;
 				destino.depositar(valor);
-				System.out.println("Transferência de R$ " + valor + "realizada ✅");
+				System.out.println("Transferência de R$ " + valor + " realizada ✅");
 
 				
 			} else {
