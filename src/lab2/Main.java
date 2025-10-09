@@ -52,11 +52,11 @@ public class Main {
 			calcularTributos();
 			break;
 		case 7:
-			System.out.println("🖥️​ Encerrado o sistema...");
-			System.out.println("👋🏼​​ Obrigado por usar o Banco Feliz");
+			System.out.println("🖥️ Encerrando o sistema...");
+			System.out.println("👋🏼 Obrigado por usar o Banco Feliz!");
 			break;	
 		default:
-			System.out.println("🚫​ Essa opção é inválida. Tente outra opção.");
+			System.out.println("🚫 Essa opção é inválida. Tente outra.");
         	} 
         }
         while (opcao != 7);
@@ -79,14 +79,14 @@ public class Main {
         		conta = new ContaPoupanca(proxNum++, nome);
         		System.out.println("Conta poupança criada com sucesso 🧾​");
 			} else {
-				System.out.println("🚫​ Tipo de conta inválido. Escolha outro tipo.");
+				System.out.println("🚫 Tipo de conta inválido. Escolha outro tipo.");
 
 			}
         	
         	if(conta != null) {
         	contas.add(conta);
         	System.out.println("O número da sua conta é " + conta.getNumero() + " 🧾​");
-        	System.out.println("Bem-vindo(a), " + nome + " 😄🎉");
+        	System.out.println("🎉 Bem-vindo(a), " + nome + "!");
 
         	}
         }
@@ -100,7 +100,7 @@ public class Main {
         	
         	Conta conta= buscarConta(num);
         	if (conta != null) {
-        		System.out.println("Processando o depósito... 💵");
+        		System.out.println("💵 Processando o depósito...");
         		conta.depositar(valor);
         	} else {
         			System.out.println("​​​❌​ Conta não encontrada. Verifique e tente novamente.");
@@ -115,10 +115,10 @@ public class Main {
         	
         	Conta conta = buscarConta(num);
         	if (conta != null) {
-        		System.out.println("Processando o saque...💵 ");
+        		System.out.println("💸 Processando o saque...");
         		conta.sacar(valor);
         	} else {
-				System.out.println("❌​ Conta não encontrada. Verifique e tente novamente.");
+				System.out.println("❌ Conta não encontrada. Verifique e tente novamente");
 			}
 		}
         
@@ -135,7 +135,7 @@ public class Main {
         	Conta destino = buscarConta(numDestino);
         	
         	if (origem != null && destino != null) {
-        		System.out.println("Realizando transferência... 🔁");
+        		System.out.println("🔁 Realizando transferência...");
         		origem.transferir(destino, valor);
         	} else {
 				System.out.println("Ocorreu um erro. Conta(s) inexistente(s) ​​​​❌​");
@@ -177,7 +177,7 @@ public class Main {
 				}
         	}
         	System.out.println("🧮​ Calculando tributos do Banco Feliz...");
-        	System.out.println("💰Total de tributos: R$ " + String.format("%.2f", total));
+        	System.out.println("💰 Total de tributos: R$ " + String.format("%.2f", total));
 
         }
         

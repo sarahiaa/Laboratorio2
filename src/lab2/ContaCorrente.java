@@ -9,7 +9,7 @@ public class ContaCorrente extends Conta implements Itributavel{
 		@Override
 		public void sacar (double valor) {
 			double taxa = valor * 0.05;
-			double totalSaque = valor * taxa;
+			double totalSaque = valor + taxa;
 			
 			if (valor >0 && saldo >= totalSaque) {
 				saldo -= totalSaque;
