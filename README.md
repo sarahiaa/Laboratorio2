@@ -2,7 +2,7 @@
 
 ### :mag_right: Sobre
 Este projeto implementa uma simulação de um sistema bancário simples, desenvolvido em **Java**.  
-Ele trabalha com conceitos como abastração, herança, interface e polimorfismo, permitindo assim as funcionalidades de **criar conta, depositar, sacar, transferência, listar todas as contas cadastradas e calcular tributos**. Projeto desenvolvido como Laboratório 2 da disciplina IMD0040 - Liguagem de Programação II.
+Ele trabalha com conceitos como abstração, herança, interface e polimorfismo, permitindo assim as funcionalidades de **criar conta, depositar, sacar, transferência, listar contas e calcular tributos**. Projeto desenvolvido como Laboratório 2 da disciplina IMD0040 - Liguagem de Programação II.
 
 ---
 
