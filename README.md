@@ -27,11 +27,21 @@ Ele trabalha com conceitos como abastração, herança, interface e polimorfismo
 
 lab2/
 │
-├── Conta.java              # Classe abstrata base com atributos e métodos comuns
-├── ContaCorrente.java      # Classe filha que implementa tributos e taxas
-├── ContaPoupanca.java      # Classe filha sem taxas
-├── Itributavel.java        # Interface para contas tributáveis
-└── Main.java               # Classe principal com o menu e lógica do sistema
+├── Conta.java
+│   Classe abstrata base com atributos e métodos comuns
+│
+├── ContaCorrente.java
+│   Classe filha que implementa tributos e taxas
+│
+├── ContaPoupanca.java
+│   Classe filha sem taxas
+│
+├── Itributavel.java
+│   Interface para contas tributáveis
+│
+└── Main.java
+    Classe principal com o menu e lógica do sistema
+
 
 ---
 
