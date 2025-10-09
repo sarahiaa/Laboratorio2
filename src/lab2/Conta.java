@@ -41,7 +41,7 @@ public abstract class Conta {
 			saldo += valor;
 			System.out.println("Depósito de R$" + valor + "  realizado ✅​");
 		}else {
-			System.out.println("Esse valor é inválido para depósito ​❌​");
+			System.out.println("Esse valor é inválido para depósito ❌​");
 		}
 	}
 	
