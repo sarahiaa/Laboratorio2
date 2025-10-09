@@ -39,7 +39,7 @@ public abstract class Conta {
 	public void depositar(double valor) {
 		if (valor >0) {
 			saldo += valor;
-			System.out.println("Depósito de R$" + valor + "realizado ✅​");
+			System.out.println("Depósito de R$" + valor + "  realizado ✅​");
 		}else {
 			System.out.println("Esse valor é inválido para depósito ​❌​");
 		}

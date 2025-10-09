@@ -85,7 +85,7 @@ public class Main {
         	
         	if(conta != null) {
         	contas.add(conta);
-        	System.out.println("O número da sua conta é " + conta.getNumero() + "🧾​");
+        	System.out.println("O número da sua conta é " + conta.getNumero() + " 🧾​");
         	System.out.println("Bem-vindo(a), " + nome + " 😄🎉");
 
         	}
@@ -137,7 +137,6 @@ public class Main {
         	if (origem != null && destino != null) {
         		System.out.println("Realizando transferência... 🔁");
         		origem.transferir(destino, valor);
-        		System.out.println("Transferência realizada ​​​​✅​");
         	} else {
 				System.out.println("Ocorreu um erro. Conta(s) inexistente(s) ​​​​❌​");
 			}
@@ -145,11 +144,26 @@ public class Main {
         
         private static void listarContas() {
         	if(contas.isEmpty()) {
-        		System.out.println("Nenhuma conta foi cadastada ​​​​👥​");
+        		System.out.println("Nenhuma conta foi cadastrada ​​​​👥​");
         	} else {
-				System.out.println("=====Essas são as contas cadastradas:=====");
-				for (Conta conta : contas) {
-				System.out.println("➡️ " + conta);
+				System.out.println("===== Essas são as contas cadastradas: =====");
+				 for (Conta conta : contas) {
+		                String tipoConta;
+
+		                if (conta instanceof ContaCorrente) {
+		                    tipoConta = "Conta corrente";
+		                } else if (conta instanceof ContaPoupanca) {
+		                    tipoConta = "Conta poupança";
+		                } else {
+		                    tipoConta = "Tipo desconhecido";
+		                }
+
+		                System.out.println("Número: " + conta.getNumero());
+		                System.out.println("Cliente: " + conta.getCliente());
+		                System.out.println("Saldo: R$ " + String.format("%.2f", conta.getSaldo()));
+		                System.out.println("Tipo: " + tipoConta);
+		                System.out.println("--------------------------------------");
+
 				} System.out.println("======================================");
 			}
         }
