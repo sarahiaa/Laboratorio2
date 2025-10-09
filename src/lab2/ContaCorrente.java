@@ -27,7 +27,7 @@ public class ContaCorrente extends Conta implements Itributavel{
 			
 			if (valor > 0 && saldo >= totalTransferir) {
 				saldo -= totalTransferir;
-				destino.depositar(valor);
+				destino.depositar2(valor);
 				System.out.println("Transferência de R$ " + valor + " realizada ✅");
 
 				

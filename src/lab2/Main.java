@@ -74,10 +74,10 @@ public class Main {
         	Conta conta = null;
         	if (tipoConta == 1) {
         		conta = new ContaCorrente(proxNum++, nome);
-        		System.out.println("Conta corrente criada com sucesso ​🧾​");
+        		System.out.println("Conta corrente criada com sucesso");
         	} else if (tipoConta == 2) {
         		conta = new ContaPoupanca(proxNum++, nome);
-        		System.out.println("Conta poupança criada com sucesso 🧾​");
+        		System.out.println("Conta poupança criada com sucesso​");
 			} else {
 				System.out.println("🚫 Tipo de conta inválido. Escolha outro tipo.");
 

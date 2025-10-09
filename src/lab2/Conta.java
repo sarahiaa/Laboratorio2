@@ -45,10 +45,15 @@ public abstract class Conta {
 		}
 	}
 	
+	public void depositar2(double valor) {
+		if (valor >0) {
+			saldo += valor;
+		}
+	}
+	
 	//Implementação nas classes filhas
 	public abstract void sacar(double valor);
 	public abstract void transferir(Conta destino, double valor);
 	
 	
 }
-
