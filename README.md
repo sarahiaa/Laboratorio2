@@ -25,7 +25,8 @@ Ele trabalha com conceitos como abastração, herança, interface e polimorfismo
 
 ## 🏗️ Estrutura do Projeto
 
-```lab2/
+```
+lab2/
 │
 ├── Conta.java
 │   Classe abstrata base com atributos e métodos comuns
@@ -40,8 +41,8 @@ Ele trabalha com conceitos como abastração, herança, interface e polimorfismo
 │   Interface para contas tributáveis
 │
 └── Main.java
-    Classe principal com o menu e lógica do sistema```
-
+    Classe principal com o menu e lógica do sistema
+```
 
 ---
 
